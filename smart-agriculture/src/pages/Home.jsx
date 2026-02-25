@@ -7,9 +7,9 @@ function Home() {
 
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${farmImage})` }}
-      ></div>
+  className="absolute inset-0 bg-cover bg-center animate-slowZoom"
+  style={{ backgroundImage: `url(${farmImage})` }}
+></div>
 
       {/* Dark Overlay Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-green-900/80 via-black/60 to-orange-700/60"></div>
