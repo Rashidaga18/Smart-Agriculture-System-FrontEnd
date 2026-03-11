@@ -1,21 +1,100 @@
-<<<<<<< HEAD
-# React + Vite
+# Smart Agriculture System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Smart Agriculture System is a web-based application designed to assist farmers in making data-driven decisions for crop management.
+This frontend provides an interactive interface where users can access crop recommendations, detect plant diseases, and manage their accounts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The system integrates with a backend API that processes agricultural data and machine learning models to generate insights.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* User authentication (Login and Signup)
+* Crop recommendation based on soil parameters
+* Plant disease detection interface
+* Responsive UI for desktop and mobile devices
+* Modern dashboard with real-time data visualization
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Smart-Agriculture-System-FrontEnd
-It's the smart agriculture system
->>>>>>> 244c0fd7d229c3e3a771adb32e4c28db17a971aa
+---
+
+## Tech Stack
+
+* React (UI library)
+* Vite (Build tool)
+* Tailwind CSS (Styling)
+* Redux Toolkit (State management)
+* JavaScript (ES6+)
+
+---
+
+## Project Structure
+
+smart-agriculture
+│
+├── public
+│   └── vite.svg
+│
+├── src
+│   ├── assets
+│   ├── components
+│   │   └── Navbar.jsx
+│   ├── pages
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   ├── CropRecommendation.jsx
+│   │   └── DiseaseDetection.jsx
+│   ├── features
+│   │   └── counterslice.js
+│   ├── app
+│   │   └── store.js
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── tailwind.config.js
+
+---
+
+## Installation
+
+Clone the repository
+
+git clone https://github.com/Rashidaga18/Smart-Agriculture-System-FrontEnd.git
+
+Navigate to the project folder
+
+cd smart-agriculture
+
+Install dependencies
+
+npm install
+
+Run the development server
+
+npm run dev
+
+---
+
+## Environment Setup
+
+Ensure that the backend API server is running.
+Update the API base URL inside the frontend configuration if needed.
+
+Example:
+
+http://localhost:8080
+
+---
+
+## Future Improvements
+
+* Integration with real-time weather APIs
+* Advanced ML-based disease detection
+* Farmer dashboard with analytics
+* Multilingual interface for farmers
+
+---
